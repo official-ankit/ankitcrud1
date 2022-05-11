@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ankitcrud1.Models.Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>Adress</th>
+        <th>Contact</th>
+    </tr>
+
+    @foreach( var i in Model)
+            {
+                <tr>
+                    <td>@i.Id</td>
+                    <td>@i.Name</td>
+                    <td>@i.Adress</td>
+                    <td>@i.Contact</td>
+
+                </tr>
+            }
+
+</table>
+
